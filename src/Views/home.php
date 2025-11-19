@@ -8,6 +8,7 @@
 
 <body>
     <h1><?= htmlspecialchars($message, ENT_QUOTES, 'UTF-8') ?></h1>
+    <p><a href="/about">About Page</a></p>
 </body>
 
 </html>
