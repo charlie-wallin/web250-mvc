@@ -1,5 +1,8 @@
 <?php
 
+// Added this in order to use namespaces
+namespace Web250\Mvc;
+
 // src/Router.php
 //
 // The Router's job is to:

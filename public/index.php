@@ -19,6 +19,17 @@ error_reporting(E_ALL);
 // Load the Router and the SalamanderController class
 require_once __DIR__ . '/../src/Router.php';
 require_once __DIR__ . '/../src/Controllers/SalamanderController.php';
+require __DIR__ . '/../vendor/autoload.php';
+
+use Dotenv\Dotenv;
+use Web250\Mvc\Router;
+use Web250\Mvc\Controllers\SalamanderController;
+
+
+// --- NEW: load .env variables ---
+$dotenv = Dotenv::createImmutable(dirname(__DIR__)); // project root
+$dotenv->load();
+// Now DB_HOST, DB_NAME, etc. are available in $_ENV / $_SERVER
 
 // Create a Router instance
 $router = new Router();
