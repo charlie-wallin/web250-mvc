@@ -7,6 +7,8 @@
 
 require_once __DIR__ . '/../Database.php';
 
+use Web250\Mvc\Database;
+
 class Salamander
 {
     /**
