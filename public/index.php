@@ -23,7 +23,6 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Dotenv\Dotenv;
 use Web250\Mvc\Router;
-use Web250\Mvc\Controllers\SalamanderController;
 
 
 // --- NEW: load .env variables ---
