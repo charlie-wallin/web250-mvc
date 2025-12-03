@@ -3,7 +3,7 @@
         'name' => 'web250/mvc',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '6148f810ae0ae00eda749520018342e45066468a',
+        'reference' => '5fe1a380a8038bcafb796242dba38c2118812f35',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -67,7 +67,7 @@
         'web250/mvc' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '6148f810ae0ae00eda749520018342e45066468a',
+            'reference' => '5fe1a380a8038bcafb796242dba38c2118812f35',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
