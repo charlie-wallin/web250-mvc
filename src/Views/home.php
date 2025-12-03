@@ -13,5 +13,8 @@
 </ul>
 
 <p>
-    Explore the <a href="/about">About page</a> to learn more about routing.
+<ul>
+    <li><a href="/salamanders">Salamanders page</a></li>
+    <li><a href="/about">About page</a></li>
+</ul>
 </p>

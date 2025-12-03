@@ -19,6 +19,7 @@
 <body>
     <h1>Salamanders</h1>
 
+    <a href="/">Back to home</a>
     <?php foreach ($salamanders as $s): ?>
         <h2><?= htmlspecialchars($s['name']) ?></h2>
 
@@ -33,6 +34,7 @@
 
         <hr>
     <?php endforeach; ?>
+
 </body>
 
 </html>
