@@ -26,11 +26,4 @@ class HomeController
         include __DIR__ . '/../Views/about.php';
         return ob_get_clean();
     }
-
-    public function salamanderDetails(): string
-    {
-        ob_start();
-        include __DIR__ . '/../Views/salamander_details.php';
-        return ob_get_clean();
-    }
 }
