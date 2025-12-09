@@ -19,20 +19,30 @@
 <body>
     <h1>Salamanders</h1>
 
-    <?php foreach ($salamanders as $s): ?>
-        <h2><?= htmlspecialchars($s['name']) ?></h2>
-
-        <p>
-            <strong>Habitat:</strong>
-            <?= nl2br(htmlspecialchars($s['habitat'])) ?>
-        </p>
-
-        <p>
-            <?= nl2br(htmlspecialchars($s['description'])) ?>
-        </p>
-
-        <hr>
-    <?php endforeach; ?>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Habitat</th>
+                <th>Description</th>
+                <th>Show</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($salamanders as $s): ?>
+                <tr>
+                    <td><?= htmlspecialchars($s['name']) ?></td>
+                    <td><?= nl2br(htmlspecialchars($s['habitat'])) ?></td>
+                    <td><?= nl2br(htmlspecialchars($s['description'])) ?></td>
+                    <td><a href="/salamanders/show?id=<?= urlencode((string)$s['id']) ?>">Show</a></td>
+                    <td><a href="/salamanders/edit?id=<?= urlencode((string)$s['id']) ?>">Edit</a></td>
+                    <td><a href="/salamanders/delete?id=<?= urlencode((string)$s['id']) ?>">Delete</a></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
 </body>
 
 </html>
