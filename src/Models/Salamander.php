@@ -32,4 +32,27 @@ class Salamander
         // Fetch all rows as an array of associative arrays
         return $stmt->fetchAll();
     }
+
+    /**
+     * Find a single salamander by id.
+     *
+     * @param int $id
+     * @return array|null
+     */
+    public static function find(int $id): ?array
+    {
+        $pdo = Database::getConnection();
+
+        $sql = "SELECT id, name, habitat, description
+                FROM salamanders
+                WHERE id = :id
+                LIMIT 1";
+
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(['id' => $id]);
+
+        $row = $stmt->fetch();
+
+        return $row === false ? null : $row;
+    }
 }
